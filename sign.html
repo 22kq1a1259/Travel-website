@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<style>
+
+        div {
+            background-color: rgb(79, 103, 236);
+            width: 300px;
+            border: 0px solid rgb(63, 101, 226);
+            padding: 50px;
+            margin: 20px;
+          }</style>
+    </head>
+    <script>
+        function loginValidation(){
+            var uname = document.myform.username.value;
+            var password = document.myform.password.value;
+            if(uname == null|| uname == ""){
+            alert("Name cannot be blank")
+            return false;
+        }
+        else if(password.length<6){
+            alert("Password must be 6 letters")
+            return false
+        }
+        return true
+    }
+    </script>
+    <body><body background="file:///C:/Users/LabUser/Desktop/UI-development/CSS/img1.jpg"></body>
+       <center> <div>
+        <body text="white"></body>
+        <h2>Login Page</h2>
+        <form name="myform"action="loginsuccess.html" onsubmit="return LoginValidation(this)">
+    UserName  <input type="text"name="Username"placeholder="username" autofocus><br><br>
+    Password  <input type="password"name="Password"placeholder="password"><br><br>
+    <input type="submit"value="submit"></div></center></form>
+    </body>
+</html>
